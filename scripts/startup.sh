@@ -22,14 +22,14 @@ import datetime
 with open("/usr/share/nginx/html/" + "$REGION" + "-data.csv", "w") as f:
 
     n=1000
-    req_az = "$REGION" 
+    origin = "$REGION" 
     source = {
         "CLOUDFRONT": "https://df3k2q0k3bu2n.cloudfront.net/static/payload",
         "S3": "https://amber-static.s3-ap-southeast-1.amazonaws.com/static/payload",
         "NGINX": "http://18.141.13.186/payload",
     }
     
-    headers = "timestamp,url,server,resp_time,status_code,size,req_az"
+    headers = "timestamp,url,server,resp_time,status_code,size,origin"
     f.write(headers)
     f.write("\n")
     
@@ -45,7 +45,7 @@ with open("/usr/share/nginx/html/" + "$REGION" + "-data.csv", "w") as f:
                 str(r.elapsed.total_seconds()), 
                 str(r.status_code), 
                 str(len(r.content)), 
-                req_az
+                origin
             ]
             f.write(",".join(row))
             f.write("\n")
