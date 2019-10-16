@@ -24,9 +24,9 @@ with open("/usr/share/nginx/html/" + "$REGION" + "-data.csv", "w") as f:
     n=1000
     origin = "$REGION" 
     source = {
-        "CLOUDFRONT": "https://df3k2q0k3bu2n.cloudfront.net/static/payload",
-        "S3": "https://amber-static.s3-ap-southeast-1.amazonaws.com/static/payload",
-        "NGINX": "http://18.141.13.186/payload",
+        "CLOUDFRONT": "https://<your-cloudfront-url>.net/static/payload",
+        "S3": "https://<s3-bucket>.s3-ap-southeast-1.amazonaws.com/static/payload",
+        "NGINX": "http://<ec2-ipv4-address>/payload",
     }
     
     headers = "timestamp,url,server,resp_time,status_code,size,origin"
