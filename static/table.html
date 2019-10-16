@@ -1,0 +1,62 @@
+<table style="border-collapse: collapse; width:35%; line-height: 1em" cellpadding="5" >
+    <tr style="border-bottom: 1pt solid black;">
+        <td colspan=4 style="text-align: center; text-align: left">Table 1: OLS Regression Estimates with the log response times as the dependent variable</td>
+    </tr>
+    <tr style="border-bottom: 1pt solid black;">
+        <td></td>
+        <td style="padding: 5px 10px 5px 10px;">(1)<br>EC2</td>
+        <td style="padding: 5px 10px 5px 10px;">(2)<br>VPN</td>
+    </tr>
+    <tr>
+        <td>Intercept</td>        
+        <td style="padding: 5px 10px 5px 10px;">3.1861*** <br> (0.009)</td>
+        <td style="padding: 5px 10px 5px 10px;">3.9444*** <br> (0.006)</td>
+    </tr>
+    <tr>
+        <td>CloudFront</td>
+        <td style="padding: 5px 10px 5px 10px;">-0.4016*** <br> (0.010)</td>
+        <td style="padding: 5px 10px 5px 10px;">0.1482*** <br> (0.006)</td>
+    </tr>
+    <tr>
+        <td>NGINX</td>        
+        <td style="padding: 5px 10px 5px 10px;">-1.9215*** <br> (0.010)</td>
+        <td style="padding: 5px 10px 5px 10px;">-1.0723*** <br> (0.006)</td>
+    </tr>
+    <tr>
+        <td>ap-southeast-1b</td>        
+        <td style="padding: 5px 10px 5px 10px;">0.1566*** <br> (0.010)</td>
+        <td style="padding: 5px 10px 5px 10px;">-</td>
+    </tr>
+    <tr>
+        <td>ap-southeast-1c</td>    
+        <td style="padding: 5px 10px 5px 10px;">0.0916*** <br> (0.010)</td>
+        <td style="padding: 5px 10px 5px 10px;">-</td>    
+    </tr>
+    <tr>
+        <td>sg-vpn-2</td>        
+        <td style="padding: 5px 10px 5px 10px;">-</td>
+        <td style="padding: 5px 10px 5px 10px;">1.4071*** <br> (0.006)</td>
+    </tr>
+    <tr>
+        <td>sg-vpn-3</td>        
+        <td style="padding: 5px 10px 5px 10px;">-</td>
+        <td style="padding: 5px 10px 5px 10px;">2.0614*** <br> (0.006)</td>
+    </tr>
+
+    <tr style="border-top: 1pt solid black;">
+        <td>Observations</td>        
+        <td style="padding: 5px 10px 5px 10px;">9,000</td>
+        <td style="padding: 5px 10px 5px 10px;">9,000</td>
+    </tr>
+    <tr style=" border-bottom: 1pt solid black;">
+        <td>Adj. R-Squared</td>        
+        <td style="padding: 5px 10px 5px 10px;">0.811</td>
+        <td style="padding: 5px 10px 5px 10px;">0.946</td>
+    </tr>
+    <tr>
+        <td>
+            * p<0.10, ** p<0.05, *** p<0.01<br>
+            Standard errors in parantheses 
+        </td>
+    </tr>
+</table>
