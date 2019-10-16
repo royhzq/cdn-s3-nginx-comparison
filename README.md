@@ -39,12 +39,14 @@ The experiment consists of three runs, with each run varying in the request orig
 ### Regression Models
 
 #### (1) EC2 - Experimental run on EC2 instances in three availability zones in ap-southeast-1 region ####
-
-$$ log(T_i) = \beta_0 + \beta_1\text{Nginx}_i + \beta_2\text{Cloudfront}_i + \beta_3\text{ap-southeast-1b}_i + \beta_4\text{ap-southeast-1c}_i + \epsilon_i $$ 
-
+```math
+log(T_i) = \beta_0 + \beta_1\text{Nginx}_i + \beta_2\text{Cloudfront}_i + \beta_3\text{ap-southeast-1b}_i + \beta_4\text{ap-southeast-1c}_i + \epsilon_i 
+```
 #### (2) VPN - Experimental run with requests proxied through three Singapore servers with a VPN ####
 
-$$ log(T_i) = \beta_0 + \beta_1\text{Nginx}_i + \beta_2\text{Cloudfront}_i + \beta_3\text{vpn-2}_i + \beta_4\text{vpn-3}_i + \epsilon_i $$
+```math
+log(T_i) = \beta_0 + \beta_1\text{Nginx}_i + \beta_2\text{Cloudfront}_i + \beta_3\text{vpn-2}_i + \beta_4\text{vpn-3}_i + \epsilon_i
+```
 
 <img src="./static/Table1.png" width="400px">
 
